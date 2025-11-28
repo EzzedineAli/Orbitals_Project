@@ -166,12 +166,12 @@ function Orbit_Out = RV_Orbit(Orbit_File)
     Orbit_Out{6} = ArgumentOfPerigee_0;
     Orbit_Out{7} = Orbit_Name;
 end
-Orbit_File = fileread('GSAT0101_(GALILEO-PFM).txt');
+Orbit_File = fileread('Satalites/GSAT0101_(GALILEO-PFM).txt');
 Orbit = Parse_TLE(Orbit_File);
 Create_Orbit(Orbit);
 Orbit = RV_Orbit(Orbit_File);
 Create_Orbit(Orbit);
-Orbit_File = fileread('NILESAT_201.txt');
+Orbit_File = fileread('Satalites/NILESAT_201.txt');
 Orbit = Parse_TLE(Orbit_File);
 Create_Orbit(Orbit);
 Orbit = RV_Orbit(Orbit_File);
